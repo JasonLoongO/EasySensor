@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:text="体脂率"
+            android:textSize="25dp"
+            android:textColor="#FF500A"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_bodyfat"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"/>
+
+        <Button
+            android:onClick="onAddEntry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="随 机 数 据"
+            android:textSize="25sp"
+            android:background="#7B68EE"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

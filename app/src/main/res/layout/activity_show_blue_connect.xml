@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="BLE蓝牙连接"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="状态信息显示"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCheckPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#40E0D0"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="90dp"
+            android:textFontWeight="1"
+            android:text="测试权限"/>
+        <Button
+            android:id="@+id/btnSearchBLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#40E0D0"
+            android:textFontWeight="1"
+            android:layout_toRightOf="@id/btnCheckPermission"
+            android:layout_alignTop="@id/btnCheckPermission"
+            android:layout_marginLeft="15dp"
+            android:text="搜索蓝牙" />
+
+        <TextView
+            android:id="@+id/tvMAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备MAC："
+            android:layout_below="@id/btnCheckPermission"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#008B8B"
+            android:layout_below="@id/tvMAC"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>
+

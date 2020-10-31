@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_bg1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bluetooth2"
+        android:id="@+id/btn_blue"
+        android:onClick="OnBlueConnect"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_temper"
+        android:background="@drawable/btn"
+        android:text="体    温"
+        android:textSize="25dp"
+        android:textColor="#AFEEEE"
+        android:onClick="OnShowTemper"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btn_heart"
+        android:background="@drawable/btn"
+        android:text="心    率"
+        android:textSize="25dp"
+        android:textColor="#AFEEEE"
+        android:onClick="OnShowHeartbt"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:id="@+id/btn_body"
+        android:background="@drawable/btn"
+        android:text="体 脂 率"
+        android:textSize="25dp"
+        android:textColor="#AFEEEE"
+        android:onClick="OnShowBodyfat"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/btn"
+        android:text="环境相关"
+        android:textSize="25dp"
+        android:textColor="#AFEEEE"
+        android:onClick="OnShowPhoneSensor"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/music_btn1"
+            android:id="@+id/music_btn"
+            android:onClick="OnMusic"/>
+        <Button
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/music_btn"
+            android:layout_marginTop="10dp"
+            android:layout_alignLeft="@+id/music_btn"
+            android:background="@drawable/contact"
+            android:onClick="OnShowAbout"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
